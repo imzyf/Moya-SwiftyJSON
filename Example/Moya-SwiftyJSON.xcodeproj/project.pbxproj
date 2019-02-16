@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		345005874B512659A5FE65AD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		345005874B512659A5FE65AD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5B0D3E9C4007520A08058921 /* Pods-Moya-SwiftyJSON_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya-SwiftyJSON_Example.release.xcconfig"; path = "Target Support Files/Pods-Moya-SwiftyJSON_Example/Pods-Moya-SwiftyJSON_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Moya-SwiftyJSON_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moya-SwiftyJSON_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,9 +44,9 @@
 		8100B1276565CD0F4B0B7BF4 /* Pods-Moya-SwiftyJSON_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya-SwiftyJSON_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Moya-SwiftyJSON_Tests/Pods-Moya-SwiftyJSON_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8EA29548043AC17E2D0D4F98 /* Pods-Moya-SwiftyJSON_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya-SwiftyJSON_Tests.release.xcconfig"; path = "Target Support Files/Pods-Moya-SwiftyJSON_Tests/Pods-Moya-SwiftyJSON_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9A14376BCD04306EFE58E854 /* Pods-Moya-SwiftyJSON_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya-SwiftyJSON_Example.debug.xcconfig"; path = "Target Support Files/Pods-Moya-SwiftyJSON_Example/Pods-Moya-SwiftyJSON_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9C2021DD8881436E1FAF0872 /* Moya-SwiftyJSON.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "Moya-SwiftyJSON.podspec"; path = "../Moya-SwiftyJSON.podspec"; sourceTree = "<group>"; };
+		9C2021DD8881436E1FAF0872 /* Moya-SwiftyJSON.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Moya-SwiftyJSON.podspec"; path = "../Moya-SwiftyJSON.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B16F0C774CFCF52B1F65BEA9 /* Pods_Moya_SwiftyJSON_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_SwiftyJSON_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2337BFB1C9EF70398526C2B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E2337BFB1C9EF70398526C2B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				8100B1276565CD0F4B0B7BF4 /* Pods-Moya-SwiftyJSON_Tests.debug.xcconfig */,
 				8EA29548043AC17E2D0D4F98 /* Pods-Moya-SwiftyJSON_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

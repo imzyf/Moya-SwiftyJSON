@@ -22,7 +22,7 @@ pod 'Moya-SwiftyJSON'
 
 ## Author
 
-yifans, yifan@magicmoma.com
+Yifans_Z
 
 ## License
 
