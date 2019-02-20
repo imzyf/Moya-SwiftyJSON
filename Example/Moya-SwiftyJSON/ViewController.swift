@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        downloadRepositories("imzyf")
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,5 +20,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+extension ViewController {
+    
+    // MARK: - API Stuff
+    func downloadRepositories(_ username: String) {
+        gitHubProvider.request(.userRepositories(username)) { result in
+            switch result {
+            case .success(let response):
+                let value = response.mapArray(Repository.self)
+                print(value)
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }
 

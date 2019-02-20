@@ -1,22 +1,38 @@
 {
   "name": "Moya-SwiftyJSON",
-  "version": "0.1.0",
-  "summary": "A short description of Moya-SwiftyJSON.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/yifans/Moya-SwiftyJSON",
+  "version": "0.0.1",
+  "summary": "Moya SwiftyJSON 对象映射",
+  "description": "Moya-SwiftyJSON 更方便的对象映射",
+  "homepage": "https://github.com/imzyf/Moya-SwiftyJSON",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "yifans": "yifan@magicmoma.com"
+    "Yifans_Z": "168@yifans.com"
   },
   "source": {
-    "git": "https://github.com/yifans/Moya-SwiftyJSON.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/imzyf/Moya-SwiftyJSON.git",
+    "tag": "0.0.1"
   },
+  "social_media_url": "https://twitter.com/zhaoyifans",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.3"
   },
-  "source_files": "Moya-SwiftyJSON/Classes/**/*"
+  "swift_version": "4.2",
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Moya-SwiftyJSON/Classes/Core/*",
+      "dependencies": {
+        "Moya": [
+          ">= 12.0.0"
+        ],
+        "SwiftyJSON": [
+
+        ]
+      }
+    }
+  ]
 }

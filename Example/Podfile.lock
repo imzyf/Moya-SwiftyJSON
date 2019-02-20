@@ -1,27 +1,39 @@
 PODS:
-  - Moya-SwiftyJSON (0.1.0)
-  - Nimble (7.0.3)
-  - Quick (1.2.0)
+  - Alamofire (4.8.1)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya-SwiftyJSON (0.0.1):
+    - Moya-SwiftyJSON/Core (= 0.0.1)
+  - Moya-SwiftyJSON/Core (0.0.1):
+    - Moya (>= 12.0.0)
+    - SwiftyJSON
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Result (4.1.0)
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Moya-SwiftyJSON (from `../`)
-  - Nimble (~> 7.0.2)
-  - Quick (~> 1.2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Nimble
-    - Quick
+    - Alamofire
+    - Moya
+    - Result
+    - SwiftyJSON
 
 EXTERNAL SOURCES:
   Moya-SwiftyJSON:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Moya-SwiftyJSON: 571e86317c2887225b6bfff521db2e3bc246880c
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Moya-SwiftyJSON: b7d08e5141c3fc071f3694494e6dc28727f6e4a2
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 8830259eb169f40f9c955196571c9c23a3d0b0ed
+PODFILE CHECKSUM: 077cbeb5dd8babc092f79cf84153a4caef6dc408
 
 COCOAPODS: 1.6.0.beta.2

@@ -26,11 +26,18 @@ Moya-SwiftyJSON 更方便的对象映射
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Yifans_Z' => '168@yifans.com' }
   s.source           = { :git => 'https://github.com/imzyf/Moya-SwiftyJSON.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/zhaoyifans'
 
   s.ios.deployment_target = '9.3'
   s.swift_version         = '4.2'
-  s.source_files = 'Moya-SwiftyJSON/Classes/**/*'
+
+  s.default_subspec = "Core"
+  
+  s.subspec "Core" do |ss|
+    ss.source_files  = "Moya-SwiftyJSON/Classes/Core/*"
+    ss.dependency "Moya", ">= 12.0.0"
+    ss.dependency "SwiftyJSON"
+  end
   
   # s.resource_bundles = {
   #   'Moya-SwiftyJSON' => ['Moya-SwiftyJSON/Assets/*.png']

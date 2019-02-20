@@ -15,6 +15,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8AA638F9D47F809DA4E93BCF /* Pods_Moya_SwiftyJSON_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CA6797C0592467687E665B /* Pods_Moya_SwiftyJSON_Example.framework */; };
 		BB46D85A63B4B9FF3D753D10 /* Pods_Moya_SwiftyJSON_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16F0C774CFCF52B1F65BEA9 /* Pods_Moya_SwiftyJSON_Tests.framework */; };
+		FD4F387D22180A4C00E15201 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F387C22180A4C00E15201 /* GitHubAPI.swift */; };
+		FD4F387F22180C2D00E15201 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F387E22180C2D00E15201 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		9C2021DD8881436E1FAF0872 /* Moya-SwiftyJSON.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Moya-SwiftyJSON.podspec"; path = "../Moya-SwiftyJSON.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B16F0C774CFCF52B1F65BEA9 /* Pods_Moya_SwiftyJSON_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_SwiftyJSON_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2337BFB1C9EF70398526C2B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FD4F387C22180A4C00E15201 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		FD4F387E22180C2D00E15201 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				FD4F387C22180A4C00E15201 /* GitHubAPI.swift */,
+				FD4F387E22180C2D00E15201 /* Repository.swift */,
 			);
 			name = "Example for Moya-SwiftyJSON";
 			path = "Moya-SwiftyJSON";
@@ -189,7 +195,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				424EADE4521083B93A76B554 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +218,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = V76HB5TB44;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -271,41 +277,25 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Moya-SwiftyJSON_Example/Pods-Moya-SwiftyJSON_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-SwiftyJSON/Moya_SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moya-SwiftyJSON_Example/Pods-Moya-SwiftyJSON_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		424EADE4521083B93A76B554 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Moya-SwiftyJSON_Tests/Pods-Moya-SwiftyJSON_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moya-SwiftyJSON_Tests/Pods-Moya-SwiftyJSON_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4FDEEC7E84E8596EB8A3604A /* [CP] Check Pods Manifest.lock */ = {
@@ -359,7 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4F387F22180C2D00E15201 /* Repository.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				FD4F387D22180A4C00E15201 /* GitHubAPI.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +498,7 @@
 			baseConfigurationReference = 9A14376BCD04306EFE58E854 /* Pods-Moya-SwiftyJSON_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V76HB5TB44;
 				INFOPLIST_FILE = "Moya-SwiftyJSON/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -521,6 +514,7 @@
 			baseConfigurationReference = 5B0D3E9C4007520A08058921 /* Pods-Moya-SwiftyJSON_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V76HB5TB44;
 				INFOPLIST_FILE = "Moya-SwiftyJSON/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
